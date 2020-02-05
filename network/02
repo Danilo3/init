@@ -6,4 +6,5 @@
 
 
 ifconfig en0 | grep broadcast |cut -d ' ' -f 6
-
+echo 
+arp -a | cut -d ' ' -f 2 | tr -d '()'
