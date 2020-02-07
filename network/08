@@ -3,3 +3,5 @@
 # Find the provider of slash16.org
 
 host slash16.org | head -1 | cut -d ' ' -f 4 | xargs whois | awk '!/(^#)/ {if (NF > 0) print}'
+
+# get IP of slash16.org then use whois 
