@@ -10,4 +10,4 @@ traceroute to slash16.org (13.33.243.106), 64 hops max, 52 byte packets
    3  217-67-187-49.in-addr.mastertelecom.ru (217.67.187.49)  4.448 ms  2.300 ms  2.199 ms
 
 
-It would be the first address that is in private network, which address is starts with 192.168
+It would be the last address that is in private network, which address is starts with 192.168
