@@ -1,4 +1,13 @@
 # Use the output of the previous command to find the name and IP address of the
 # device that makes the link between you (local network) and the outside world
 
-It would be the first aadress that is not in private network, which address is starts with 192.168
+Output of traceroute:
+
+traceroute: Warning: slash16.org has multiple addresses; using 13.33.243.106
+traceroute to slash16.org (13.33.243.106), 64 hops max, 52 byte packets
+ 1  192.168.20.1 (192.168.20.1)  1.506 ms  3.447 ms  1.029 ms
+  2  192.168.2.9 (192.168.2.9)  0.245 ms  0.341 ms  0.346 ms
+   3  217-67-187-49.in-addr.mastertelecom.ru (217.67.187.49)  4.448 ms  2.300 ms  2.199 ms
+
+
+It would be the first address that is in private network, which address is starts with 192.168
