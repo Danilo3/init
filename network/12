@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Find the IP that was assigned to you by dhcp server
+
+ipconfig getifaddr en0
+
+# ipconfig getpacket en0 | grep 'yiaddr' | awk '{print $3}'
