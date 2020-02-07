@@ -2,4 +2,4 @@
 21 school init project
 
 
-See wiki page for solutions ans explanations[RUS]
+See [WIKI](https://github.com/Danilo3/init/wiki) page for solutions ans explanations[RUS]
