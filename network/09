@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Find the external IP of 42.fr
+
+host 42.fr | grep 'address' | awk '{print $4}'
