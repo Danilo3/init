@@ -3,4 +3,4 @@
 
 ipconfig getifaddr en0 | xargs dig +noall +answer -x | awk {'print $1'} 
 
-Get address of machine and tranfrom it in reverse-notaion with help of PTR-notation
+Get address of machine and transfrom it in reverse-notaion with help of PTR-notation
