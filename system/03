@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# 03
+# What file has to be modifed to make it permanent?
+
+/etc/hostname
