@@ -1,0 +1,31 @@
+#!/bin/bash
+
+api_key="trnsl.1.1.20180608T154720Z.40d49863e4abf05e.58f9ed4b49ff0dc33e264e15aaf29979cc8934a5"
+
+api_address="https://translate.yandex.net/api/v1.5/tr.json/translate"
+
+lang="en_ru"
+
+ARGS=1
+
+if [ $# -ne "$ARGS" ]
+then
+	echo "Usage ./03 \"phrase\" [lang_from-lang_to]"
+	exit -1
+fi
+
+phrase=$1
+
+lang=$2
+
+if [ -z "$lang" ];
+then
+	lang="en-ru"
+fi
+
+function make_request(){
+	response=$(curl -s --data-urlencode "text=$phrase" "$api_address?key=$api_key&lang=$lang") 
+	echo $response | grep -Eo "\"text\":\[.*\]" | cut -d: -f2
+}
+
+make_request
