@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+function delete_user() {
+	skill -u $1
+	userdel -r $1
+}
+
+ARGS=1
+E_BADARGS=65
+
+if [ $# -ne "$ARGS" ]; then
+	echo "Usage: ./02 <username>"
+	exit $E_BADARGS
+fi
+
+user=$1
+
+if id -u $user > /dev/null 2>&1; then
+
+	delete_user $user
+else
+	echo "The user does not exist"
+fi
+
+
